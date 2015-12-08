@@ -1,33 +1,17 @@
-
-<!-- Link to the Bootstrap CSS framework in your HEAD tag
-Utilize the Bootstrap grid system to create a logical separation in your design elements (e.g. header, content, sidebar, footer) on medium-sized (992px wide and up) devices and up
-Ensure that on small sized devices (768px and up), you can still see content and a sidebar, and that content is not simply stacked
-Use at least one of Bootstrap's built-in CSS classes to style HTML elements. Examples:
-Make a link look like a button
-Style a table
-Make an image square, rounded, or circle
-Use at least one other Bootstrap design component
-Nav
-Navbar
-Label
-Alert
-Etc.
-Commit and sync your changes to your Github account no later than 11:59pm on Thursday. -->
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bootstrap Me</title>
+  <title>SF or Seattle? </title>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="style2.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="container">
           <nav class="navbar navbar-inverse" role="navigation">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -35,37 +19,45 @@ Commit and sync your changes to your Github account no later than 11:59pm on Thu
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Neighborly</a>
+              <a class="navbar-brand" href="index.html">Decider</a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
                 <li>
-                  <a href="index.html">
-                    <i class="fa fa-university"></i>
-                    Who Are We
+                  <a href="reviews.html">
+                    <i class="fa fa-star"></i>
+                    Reviews
                   </a>
                 </li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                     <i class="fa fa-map"></i>
-                    Cities
+                    Learn More
                     <span class="caret"></span>
                   </a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">San Francisco</a></li>
+                    <li><a href="sfpage.html">San Francisco</a></li>
                     <li><a href="#">Seattle</a></li>
-                    <li><a href="#">Nashville</a></li>
-                    <li><a href="#">Los Angeles</a></li>
-                    <li><a href="#">Chicago</a></li>
                   </ul>
+                </li>
+                <li>
+                  <a href="criteria.html">
+                    <i class="fa fa-check"></i>
+                    Narrow your criteria
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:rhwang2016@kellogg.northwestern.edu">
+                    <i class="fa fa-envelope"></i>
+                    Contact Us
+                  </a>
                 </li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
                 <li>
                   <a href="#">
                     <i class="fa fa-user" id="facog"></i>
-                    My Giving
+                    My Decision Process
                   </a>
                 </li>
               </ul>
@@ -73,50 +65,53 @@ Commit and sync your changes to your Github account no later than 11:59pm on Thu
           </nav>
     </div>
     <div class="container">
-        <div class="jumbotron">
-          <h1>Know your money is put to good use</h1>
-          <h2>Introducing the easiest way to give to the homeless in your city</h2>
-          <h3><a href="#" class="btn btn-lg btn-success">Find out more</a></h3>
+        <div class="jumbotron" id="jumbotron">
+          <h1>San Francisco or Seattle?</h1>
+          <h2>Having trouble figuring out where to move? Let Decider help you decide.</h2>
+          <h3><a href="sfpage.html" class="btn btn-lg btn-success">Find out more</a></h3>
         </div>
     </div>
     <div class="container">
-        <div class="col-xs-7 col-sm-7 col-md-8 text-center ">
-        <p><img src="sfpic.jpg" id="sfpic"></p>
-            <table class="table table-hover">
-              <thead>
-                <tr>
-                  <th>City</th>
-                  <th>Location</th>
-                  <th>Director of Operations</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>San Francisco</td>
-                  <td>555 Howard St</td>
-                  <td>Sudeep</td>
-                </tr>
-                <tr>
-                  <td>Seattle</td>
-                  <td>234 Pike Place</td>
-                  <td>Chris</td>
-                </tr>
-                <tr>
-                  <td>Nashville</td>
-                  <td>505 Oakland Ave</td>
-                  <td>Michael</td>
-                </tr>
-              </tbody>
-            </table>
+      <br>
+      <br>
+      <div class="row">
+      <div class="col-xs-4 col-sm-4 col-md-4 text-center ">
+        <i class="fa fa-cutlery fa-5x"></i>
+        <h2> Eat only the best </h2>
+        <center> Our city experts have the insider info on which city has the food you can't live without and which restaurants are total duds.  </center>
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4 text-center ">
+        <i class="fa fa-camera-retro fa-5x"></i>
+        <h2> Be entertained </h2>
+        <center> Can this city entertain you in the long-run? We'll give you a VIP look into the hottest clubs and bars SF and Seattle have to offer. </center>
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4 text-center ">
+        <i class="fa fa-compass fa-5x"></i>
+        <h2> Find new friends </h2>
+        <center> Don't accidentally move into a retirement community. We'll help you find the best neighborhoods for young professionals. </center>
+      </div>
+      </div>
+      <br>
+      <br>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 text-center ">
+        <h2> San Francisco </h2>
+        <p> 
+          <a href = "sfpage.html"> 
+          <img src="sfpic.jpg" id="sfpic">
+          </a>
+        </p>
         </div>
-        <div class="col-xs-4 col-sm-4 col-md-4 text-center">
-        <H1> How to Give </H1>
-            <div class="row">
-            <p><a href="#" class="btn btn-lg btn-success"><i class="fa fa-gift"></i> Donate Today</a></p>
-            <p><strong>Fundraising Target:</strong> $100,000</p>
-            <p><strong>Current Fundraising:</strong> $35,000</p>
-            </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 text-center">
+        <h2> Seattle </h2>
+          <a href = "#"> 
+          <img src="seattlepic.jpg" id="sfpic">
+          </a>
         </div>
-        </div>
+      </div>
+    </div>
 </body>
 </html>

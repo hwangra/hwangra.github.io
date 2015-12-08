@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SF or Seattle? </title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+          <nav class="navbar navbar-inverse" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">Decider</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li>
+                  <a href="reviews.html">
+                    <i class="fa fa-star"></i>
+                    Reviews
+                  </a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                    <i class="fa fa-map"></i>
+                    Learn More
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="sfpage.html">San Francisco</a></li>
+                    <li><a href="seattlepage.html">Seattle</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="criteria.html">
+                    <i class="fa fa-check"></i>
+                    Narrow your criteria
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:rhwang2016@kellogg.northwestern.edu">
+                    <i class="fa fa-envelope"></i>
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="#">
+                    <i class="fa fa-user" id="facog"></i>
+                    My Decision Process
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+
+<!-- Carousel -->
+<div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active"> <center>
+          <img src="Mark-Zuckerberg.jpg" alt="Zuck" id="img">
+          <div class="carousel-caption">
+            <h3>Mark Zuckerberg</h3>
+            <p>"Before Decider, I was planning to locate Facebook in Omaha. Thanks Decider!"</p>
+          </div>
+        </div>
+
+        <div class="item"> <center>
+          <img src="Bill-Gates.jpg" alt="Bill" id="img">
+          <div class="carousel-caption">
+            <h3>Bill Gates</h3>
+            <p>"Thanks to Decider, I chose to headquarter Microsoft in beautiful Redmond."</p>
+          </div>
+        </div>
+
+        <div class="item"> <center>
+          <img src="SeaHawks.jpg" alt="Seahawks" id="img">
+          <div class="carousel-caption">
+            <h3>Seattle Seahawks</h3>
+            <p>"Training in the rain and playing our opponents on a wet field is a true advantage for us.</p>
+            <p>Thanks Seattle and Decider!" </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+</div>
+<!-- Bootstrap rows/columns -->
+   <br>
+   <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-lg-4 text-center ">
+          <img class="img-circle" src="Mark-Zuckerberg.jpg" alt="..." width="150" height="150">
+          <h2>Mark Zuckerberg</h2>
+          <p>"Before Decider I was planning on living in Omaha with my grandma after Harvard. I never would've scaled Facebook if it wasn't for Decider convincing me to move to San Francisco."</p> 
+        </div>
+        <div class="col-md-4 col-lg-4 text-center">
+          <img class="img-circle" src="Bill-Gates.jpg" alt="..." width="150" height="150">
+          <h2>Bill Gates</h2>
+          <p>"Believe me, deciding where to live was not a "micro" decision. Ha ha! Luckily Decider helped me to take the "soft" factors and turn them into "hard" facts and figures."" </p> 
+        </div>
+        <div class="col-md-4 col-lg-4 text-center">
+          <img class="img-circle" src="SeaHawks.jpg" alt="..." width="150" height="150">
+          <h2>Seattle Seahawks</h2>
+          <p>"When we found out there's a city that's constantly raining and overcast during our entire season, we knew we had found a place where nothing would distract our players except for football. Decision made."</p> 
+        </div>
+      </div>
+    </div>
+</body>
+</html>
